@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高峰 | 高级3D角色建模师作品集</title>
+    <style>
+        :root {
+            --primary-color: #00e5ff; /* 极光蓝，呼应你的图1和图2 */
+            --bg-dark: #0a0a0c;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* 顶部导航 */
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(10,10,12,1)), 
+                        url('hcnw1.jpg') center/cover; /* 这里建议用你的第一张图做背景 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 5px;
+            text-shadow: 0 0 20px var(--primary-color);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            color: #ccc;
+            max-width: 600px;
+        }
+
+        /* 作品集区域 */
+        .container {
+            max-width: 1200px;
+            margin: -50px auto 100px;
+            padding: 0 20px;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .portfolio-item {
+            background: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-color);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .portfolio-info {
+            padding: 20px;
+        }
+
+        .portfolio-info h3 {
+            margin: 0 0 10px 0;
+            color: var(--primary-color);
+        }
+
+        /* 个人简介 & 联系方式 */
+        .about-section {
+            background: rgba(255,255,255,0.02);
+            padding: 80px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .contact-box {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            font-size: 1.1rem;
+            background: rgba(255,255,255,0.05);
+            padding: 15px 30px;
+            border-radius: 50px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>高峰 GAO FENG</h1>
+        <p>高级3D角色建模师 / ZBrush封面级作品创作者</p>
+    </header>
+
+    <div class="container">
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://i.pinimg.com/1200x/37/85/bf/3785bfc9b648be6de6a72e3a278cdffe.jpg" alt="使命召唤项目作品">
+                <div class="portfolio-info">
+                    <h3>使命召唤 (Call of Duty)</h3>
+                    <p>参与角色高精度建模与材质表现，展现极寒环境下的金属与皮草质感。</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="qsq3.jpg" alt="和平精英项目作品">
+                <div class="portfolio-info">
+                    <h3>和平精英 (Game for Peace)</h3>
+                    <p>现代科幻风格角色创作，专注于流线型盔甲与发光材质的融合设计。</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="yhyy2.jpg" alt="暗黑幻想作品">
+                <div class="portfolio-info">
+                    <h3>ZBrush 封面作品集</h3>
+                    <p>暗黑幻想风格雕刻，复杂纹理表现与仪式感角色的深度刻画。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-section">
+        <h2>关于我 & 项目经验</h2>
+        <p style="max-width: 800px; margin: 0 auto; color: #aaa;">
+            深耕 3D 角色建模领域多年，拥有丰富的 AAA 级游戏项目经验。曾主导或参与多个《使命召唤》系列及《和平精英》项目，
+            擅长从 ZBrush 高模雕刻到 PBR 全流程制作，追求每一个像素的极致还原。
+        </p>
+        
+        <div class="contact-box">
+            <div class="contact-item">📞 1988119875</div>
+            <div class="contact-item">📧 zhianzhiana@163.com</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 高峰. All Rights Reserved. | 3D Character Artist Portfolio</p>
+    </footer>
+
+</body>
+</html>
